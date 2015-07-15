@@ -16,7 +16,7 @@ PM2.5 Emissions Data (summarySCC_PM25.rds): This file contains a data frame with
 
     fips    SCC     Pollutant Emissions type year
     
- #### 4  09001 10100401  PM25-PRI    15.714 POINT 1999
+4  09001 10100401  PM25-PRI    15.714 POINT 1999
  8  09001 10100404  PM25-PRI   234.178 POINT 1999
  12 09001 10100501  PM25-PRI     0.128 POINT 1999
  16 09001 10200401  PM25-PRI     2.036 POINT 1999
@@ -39,7 +39,7 @@ Source Classification Code Table (Source_Classification_Code.rds): This table pr
 
 You can read each of the two files using the readRDS() function in R. For example, reading in each file can be done with the following code:
 
-## This first line will likely take a few seconds. Be patient!
+This first line will likely take a few seconds. Be patient!
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
 
@@ -53,7 +53,7 @@ You must address the following questions and tasks in your exploratory analysis.
 
     1. Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
 
-   2.  Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? Use the base plotting system to make a plot answering this question.
+    2.  Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? Use the base plotting system to make a plot answering this question.
 
     3. Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.
 
